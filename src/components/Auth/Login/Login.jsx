@@ -50,14 +50,14 @@ const Login = () => {
   return (
     <div>
       <h1>Ingreso</h1>
-      <form onSubmit={ handleSubmit }>
-        <label htmlFor='email'>Correo</label>
-        <input id='email' name='email' type="email" value={ formValues.email } onChange={ handleFormChange }></input>
+      <form className='formulario' onSubmit={ handleSubmit }>
+        <label className='label' htmlFor='email'>Correo</label>
+        <input className='input' id='email' name='email' type="email" value={ formValues.email } onChange={ handleFormChange }></input>
 
-        <label htmlFor='password'>Contraseña</label>
-        <input type="password" id='password' name='password' value={ formValues.password } onChange={ handleFormChange }></input>
+        <label className='label' htmlFor='password'>Contraseña</label>
+        <input className='input' type="password" id='password' name='password' value={ formValues.password } onChange={ handleFormChange }></input>
 
-        <button type='submit'>Ingresar</button>
+        <button className='botones2' type='submit'>Ingresar</button>
       </form>
     </div>
   )

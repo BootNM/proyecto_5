@@ -66,7 +66,7 @@ const Signup = () => {
         <label className='label' htmlFor='password'>Contraseña</label>
         <input className='input' id='password' name='password' type="password" value={ formValues.password } onChange={ handleFormChange }></input>
 
-        <button className='botones' type='submit'>Registrarse</button>
+        <button className='botones2' type='submit'>Registrarse</button>
       </form>
     </div>
   )

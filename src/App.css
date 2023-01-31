@@ -63,3 +63,24 @@
   /* background: #000; */
   width: 100px;
 }
+
+h1{
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #01c9e4;
+  text-shadow: 0 3px rgb(16, 16, 16);
+}
+
+.botones2{
+  margin-top: 20px;
+  padding: 5px 15px;
+  font-weight: bold;
+  background-image: linear-gradient(to left,  #071e54b9, #0499c2);
+  color: aliceblue;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.botones2:hover{
+  transform: scale(1.1);
+}
