@@ -1,9 +1,11 @@
 .App {
   text-align: center;
-  background-image: url("../img/teahub.io-messi-wallpaper-43288.jpg") ;
+  /* background-image: url("../img/teahub.io-messi-wallpaper-43288.jpg"); */
+  background-image: url("https://www.teahub.io/photos/full/3-35388_fresh-4k-football-wallpaper-football-wallpapers-4k.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 1000px;
   background-attachment: fixed;
 }
 
@@ -44,4 +46,20 @@
 .product-card {
   max-height: 50vh;
     
+}
+
+.formulario{
+  background-image: linear-gradient(to left, #0499c2, #071e54b9);
+  width: 330px;
+  border-style: double;
+}
+
+.input{
+  /* background: #000; */
+  border-radius: 5px;
+}
+
+.label{
+  /* background: #000; */
+  width: 100px;
 }

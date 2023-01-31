@@ -1,3 +1,19 @@
 #basic-navbar-nav {
   justify-content: flex-end;
 }
+
+.nav{
+  display: flex;
+  gap: 25px;
+}
+
+.botones{
+  background-image: linear-gradient(to left, #0499c2, #071e54);
+  gap: 20px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.botones:hover{
+  transform: scale(1.1);
+}

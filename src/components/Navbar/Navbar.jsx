@@ -28,12 +28,12 @@ export default function Navbar() {
           </NavbarBT.Brand>
           <NavbarBT.Toggle aria-controls="basic-navbar-nav"></NavbarBT.Toggle>
           <NavbarBT.Collapse id='basic-navbar-nav'>
-            <Nav>
-              <Button><Nav.Link href='/'>Home</Nav.Link></Button>
+            <Nav className='nav'>
+              <Button className='botones'><Nav.Link href='/'>Home</Nav.Link></Button>
 
               {
                 user?.email ? <>
-                  <Button><Nav.Link href='/profile'>Perfil</Nav.Link></Button>
+                  <Button className='botones'><Nav.Link href='/profile'>Perfil</Nav.Link></Button>
                   <Button onClick={ () => logout() } > <Nav.Link href='/'>Cerrar sesión</Nav.Link></Button>
                   <Button variant="primary" onClick={ handleShowShoppingCart }>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cart" viewBox="0 0 16 16">
@@ -41,8 +41,8 @@ export default function Navbar() {
                     </svg> <Badge bg="secondary">{ products.length > 0 ? products.length : '' }</Badge>
                   </Button>
                 </> : <>
-                  <Button><Nav.Link href='/auth/login'>Ingreso</Nav.Link></Button>
-                  <Button><Nav.Link href='/auth/signup'>Registro</Nav.Link></Button>
+                  <Button className='botones'><Nav.Link href='/auth/login'>Ingreso</Nav.Link></Button>
+                  <Button className='botones'><Nav.Link href='/auth/signup'>Registro</Nav.Link></Button>
                 </>
               }
             </Nav>

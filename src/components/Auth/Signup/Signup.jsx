@@ -53,20 +53,20 @@ const Signup = () => {
   return (
     <div>
       <h1> Registro </h1>
-      <form onSubmit={ handleSubmit }>
-        <label htmlFor='name'>Nombre</label>
-        <input id='name' name='name' type="text" value={ formValues.name } onChange={ handleFormChange }></input>
+      <form className='formulario' onSubmit={ handleSubmit }>
+        <label className='label' htmlFor='name'>Nombre</label>
+        <input className='input' id='name' name='name' type="text" value={ formValues.name } onChange={ handleFormChange }></input>
 
-        <label htmlFor='surname'>Apellido</label>
-        <input id='surname' name='surname' type="text" value={ formValues.surname } onChange={ handleFormChange }></input>
+        <label className='label' htmlFor='surname'>Apellido</label>
+        <input className='input' id='surname' name='surname' type="text" value={ formValues.surname } onChange={ handleFormChange }></input>
 
-        <label htmlFor='email'>Correo</label>
-        <input id='email' name='email' type="email" value={ formValues.email } onChange={ handleFormChange }></input>
+        <label className='label' htmlFor='email'>Correo</label>
+        <input className='input' id='email' name='email' type="email" value={ formValues.email } onChange={ handleFormChange }></input>
 
-        <label htmlFor='password'>Contraseña</label>
-        <input id='password' name='password' type="password" value={ formValues.password } onChange={ handleFormChange }></input>
+        <label className='label' htmlFor='password'>Contraseña</label>
+        <input className='input' id='password' name='password' type="password" value={ formValues.password } onChange={ handleFormChange }></input>
 
-        <button type='submit'>Registrarse</button>
+        <button className='botones' type='submit'>Registrarse</button>
       </form>
     </div>
   )
