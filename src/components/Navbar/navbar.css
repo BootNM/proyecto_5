@@ -1,3 +1,32 @@
 #basic-navbar-nav {
-  justify-content: flex-end;
+  justify-content: center;
+  
+}
+
+.d-inline-block  {
+  border-radius: 50%;
+}
+
+.titulo {
+  color: #F1C067;
+  max-width: max-content;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #4D6CA0;
+
+}
+
+.btn-nav {
+  background-color: #322278 ;
+  text-emphasis-color: #FFF2BC;
+}
+
+.navbar-toggle-icon {
+  align-self: center;
+}
+
+.botonera {
+ max-width: 30% ;
 }
