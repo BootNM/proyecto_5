@@ -29,7 +29,7 @@ export default function Catalogue() {
   }, [] )
   return (
     <Container>
-      <p>A continuación, podrá ver el listado de productos</p>
+      <h2 className='subtitulo'>Elige aquí tu nueva piel!</h2>
       {
         loadingData ? (
           <Spinner animation='border' role={ "status" }></Spinner>

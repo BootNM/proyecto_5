@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  /* background-image: url("../img/teahub.io-messi-wallpaper-43288.jpg"); */
   background-image: url("https://www.teahub.io/photos/full/3-35388_fresh-4k-football-wallpaper-football-wallpapers-4k.jpg");
   background-size: cover;
   background-position: center;
@@ -9,9 +8,8 @@
   background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  border-radius: 35%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -83,4 +81,19 @@ h1{
 
 .botones2:hover{
   transform: scale(1.1);
+}
+
+.subtitulo {
+  color: aliceblue;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 1rem;
+  background-color: #212529b8;
+  border-radius: 15px;
+}
+
+.topnav {
+  width: 100vw;
+  padding: 0 20px 0 20px;
 }

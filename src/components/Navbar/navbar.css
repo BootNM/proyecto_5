@@ -1,5 +1,6 @@
 #basic-navbar-nav {
   justify-content: flex-end;
+ 
 }
 
 .nav{
@@ -16,4 +17,9 @@
 
 .botones:hover{
   transform: scale(1.1);
+}
+
+.titulo {
+max-width: max-content;
+padding: 1rem 1rem 1rem 1rem;
 }

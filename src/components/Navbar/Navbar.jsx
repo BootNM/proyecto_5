@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react';
-import { Badge, Button, Container, Nav } from 'react-bootstrap';
+import { Badge, Button, Container, Nav, Card } from 'react-bootstrap';
 import NavbarBT from 'react-bootstrap/Navbar';
 import ShoppingCartContext from '../../contexts/shopping-cart/ShoppingCartContext.jsx';
 import UserContext from '../../contexts/users/UserContext.jsx';
 import ShoppingCart from '../ShoppingCart/ShoppingCart.jsx';
+import logo from '../../img/logo.png';
 
 import './navbar.css';
 
@@ -21,11 +22,14 @@ export default function Navbar() {
   return (
     <>
       <NavbarBT bg='dark' variant='dark' expand="md">
-        <Container>
+        <Container className='topnav'>
           <NavbarBT.Brand href='#'>
-            <img src='https://react-bootstrap.github.io/logo.svg' width="30" height="30" className="d-inline-block align-top"
+            <img src={logo} width="70" height="70" className="logo d-inline-block align-top"
               alt="React Bootstrap logo"></img>
           </NavbarBT.Brand>
+          <Card className='titulo'>
+            <h2>Soy un título</h2>
+          </Card>
           <NavbarBT.Toggle aria-controls="basic-navbar-nav"></NavbarBT.Toggle>
           <NavbarBT.Collapse id='basic-navbar-nav'>
             <Nav className='nav'>
