@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+import './profile.css'
 
 export default function Profile() {
 
   return (
     <>
-      <div>
-        <h1>Aquí va tu perfil</h1>
+      <div className='profile'>
+        <h1>Aquí pondría mi perfil...</h1>
+        <div className='meme'> </div>
+        
       </div>
 
     </>

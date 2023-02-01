@@ -28,7 +28,7 @@ export default function Navbar() {
               alt="React Bootstrap logo"></img>
           </NavbarBT.Brand>
           <Card className='titulo'>
-            <h2>Soy un título</h2>
+            <h2>SEGUNDA PIEL</h2>
           </Card>
           <NavbarBT.Toggle aria-controls="basic-navbar-nav"></NavbarBT.Toggle>
           <NavbarBT.Collapse id='basic-navbar-nav'>

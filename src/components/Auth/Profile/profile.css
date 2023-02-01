@@ -1,0 +1,18 @@
+.meme {
+    background-image: url('../../../img/meme.jpg');
+    background-repeat: no-repeat;
+    background-size:  contain;
+    width: 500px;
+    height: 400px; 
+    position: absolute;
+    margin-top: 80px;
+
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    width: 100vw;
+    
+
+}

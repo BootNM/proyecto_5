@@ -12,6 +12,7 @@ import Home from './components/Home/Home.jsx';
 import Navbar from './components/Navbar/Navbar';
 import ShoppingCartState from './contexts/shopping-cart/ShoppingCartState.jsx';
 import UserState from './contexts/users/UserState.jsx';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -56,9 +57,13 @@ function App() {
 
             </Routes>
           </Router>
+          
         </UserState>
       </ShoppingCartState>
+      <Footer />
+
     </div>
+
   );
 }
 

@@ -12,7 +12,8 @@ const Product = (props) => {
       style={{
         width: "15rem",
         marginInline: ".2rem",
-        opacity: .9
+        opacity: .9,
+        marginBottom: "2rem"
       }}
       key={product._id}
     >
@@ -24,8 +25,8 @@ const Product = (props) => {
       <Card.Body style={{ 
         opacity: 1, 
         backgroundColor: "#101214d1" }}>
-        <Card.Title>{product.name}</Card.Title>
-        <Card.Text>{product.price}</Card.Text>
+        <Card.Title style={{color:'aliceblue'}}>{product.name}</Card.Title>
+        <Card.Text style={{color:'aliceblue'}}>{product.price}</Card.Text>
         <Button
           variant="primary"
           className="botones"
