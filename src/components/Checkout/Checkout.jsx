@@ -43,7 +43,7 @@ const Checkout = () => {
     const getPreferenceId = async () => {
       const token = localStorage.getItem( 'token' )
 
-      const fetchResponse = await fetch( 'https://proy5back-production.up.railway.app/orders', {
+      const fetchResponse = await fetch( 'http://proy5back-production.up.railway.app/orders', {
         method: 'POST',
         headers: {
           "Authorization": `Bearer ${ token }`,

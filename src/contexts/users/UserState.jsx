@@ -20,7 +20,7 @@ const UserState = ( props ) => {
   const registerUser = async ( dataForm ) => {
 
     try {
-      const fetchResponse = await fetch( 'https://proy5back-production.up.railway.app/auth/signup', { method: 'POST', headers: { "Content-type": 'application/json', "Accept": 'application/json' }, body: JSON.stringify( dataForm ) } )
+      const fetchResponse = await fetch( 'http://proy5back-production.up.railway.app/auth/signup', { method: 'POST', headers: { "Content-type": 'application/json', "Accept": 'application/json' }, body: JSON.stringify( dataForm ) } )
       const response = await fetchResponse.json()
       if ( !fetchResponse.ok ) {
         throw new Error( response.details )
@@ -38,7 +38,7 @@ const UserState = ( props ) => {
 
   const loginUser = async ( dataForm ) => {
     try {
-      const fetchResponse = await fetch( 'https://proy5back-production.up.railway.app/auth/login', {
+      const fetchResponse = await fetch( 'http://proy5back-production.up.railway.app/auth/login', {
         method: 'POST',
         headers: {
           "Content-type": "application/json",
@@ -69,7 +69,7 @@ const UserState = ( props ) => {
     }
     try {
 
-      const fetchResponse = await fetch( "https://proy5back-production.up.railway.app/users/profile", {
+      const fetchResponse = await fetch( "http://proy5back-production.up.railway.app/users/profile", {
         method: 'GET', headers: {
           "Authorization": `Bearer ${ token }`,
           "Content-type": "application/json",
