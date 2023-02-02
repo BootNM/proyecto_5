@@ -69,7 +69,7 @@ const UserState = ( props ) => {
     }
     try {
 
-      const fetchResponse = await fetch( "https://proy5back-production.up.railway.app", {
+      const fetchResponse = await fetch( "https://proy5back-production.up.railway.app/users/profile", {
         method: 'GET', headers: {
           "Authorization": `Bearer ${ token }`,
           "Content-type": "application/json",
