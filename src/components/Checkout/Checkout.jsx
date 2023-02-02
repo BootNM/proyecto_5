@@ -43,7 +43,7 @@ const Checkout = () => {
     const getPreferenceId = async () => {
       const token = localStorage.getItem( 'token' )
 
-      const fetchResponse = await fetch( 'http://localhost:3001/orders', {
+      const fetchResponse = await fetch( 'https://segundapiel.vercel.app/orders', {
         method: 'POST',
         headers: {
           "Authorization": `Bearer ${ token }`,

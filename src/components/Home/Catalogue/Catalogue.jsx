@@ -10,7 +10,7 @@ export default function Catalogue() {
   useEffect( () => {
     const obtenerCatalogue = async () => {
       try {
-        const response = await fetch( 'http://localhost:3001/products' )
+        const response = await fetch( 'https://segundapiel.vercel.app/products' )
         const products = await response.json()
         
         setProducts( products )
