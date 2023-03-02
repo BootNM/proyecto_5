@@ -10,7 +10,7 @@ export default function Catalogue() {
   useEffect( () => {
     const obtenerCatalogue = async () => {
       try {
-        const response = await fetch( 'http://proy5back-production.up.railway.app/products' )
+        const response = await fetch( 'https://p5-backendd.onrender.com/products' )
         const products = await response.json()
         
         setProducts( products )
